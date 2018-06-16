@@ -1,0 +1,229 @@
+@font-face {
+	font-family: logoFont;
+	src: url(../fonts/zekton.ttf);
+}
+
+.navbar {
+	position: absolute;
+	top: 20px;
+	width: 100%;
+	min-height: 120px;
+	border: none;
+	z-index: 15;
+}
+
+.navbar-default {
+	background-color: transparent;
+	color: #FFFFFF;
+}
+
+.navbar-default .navbar-nav > li > a {
+	padding-left: 25px;
+	padding-right: 25px;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus, 
+.navbar-default .navbar-nav > li > a.active {
+	background-color: transparent;
+	font-size: 18px;
+	font-weight: bolder;
+	color: #FFFFFF;
+}
+
+/*Navbar Header*/
+.navbar-header {
+	height: 80px;
+}
+
+.navbar-header > .navbar-brand {
+	height: 100%;
+	min-width: 220px;
+	padding: 5px 15px;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: bolder;
+}
+
+.navbar-header > .navbar-brand:focus,
+.navbar-header > .navbar-brand:hover {
+
+	padding: 5px 16px;
+	color: #FFFFFF;
+	font-size: 20px;
+}
+
+.navbar-brand > img {
+	display: inline;
+	height: 100%;
+}
+
+
+/*Slides*/
+#homeContent {
+	position: fixed;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+	background-color: #000000;
+}
+
+#homeContent > .homeSlide {
+	display: none;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -15;
+	opacity: 0.6;
+}
+
+#homeContent > .homeSlide > img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	z-index: -5;
+}
+
+.homeStatement {
+	position: relative;
+	top: 35vh;
+}
+
+.homeStatement > div > div {
+	position: absolute;
+	display: none;
+}
+
+.homeStatement a > div {
+	height: 30vh;
+}
+
+.homeStatement .stateImage {
+	text-align: center;
+	height: 80%;
+}
+
+.homeStatement .stateImage > img {
+	height: 100%;
+}
+
+.homeStatement .stateText {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	font-size: 8vmin;
+	font-weight: bolder;
+	color: #FFFFFF;
+}
+
+
+/*Header*/
+#headerDarkBackground {
+	position: absolute;
+	top: 0;
+	height: 420px;
+	width: 100%;
+	background-color: #000000;
+	z-index: -500;
+}
+
+#headerBackground {
+	position: relative;
+	top: 0;
+	height: 420px;
+	width: 100%;
+	margin-bottom: 50px;
+	opacity: 0.5;
+	background-image: url(../images/backgrounds/grass.png);
+	background-repeat: repeat;
+	z-index: -300;
+}
+
+.headerDefault {
+	position: absolute;
+	top: 150px;
+	width: 100%;
+	text-align: center;
+	font-family: logoFont;
+	color: #FFFFFF;
+}
+
+.headerDefault h2 {
+	font-size: 5vmin;
+	font-weight: bolder;
+	letter-spacing: 15px;
+}
+
+
+/*Content*/
+.tcontent {
+	font-size: 16px;
+	padding-bottom: 50px;
+}
+
+.tcontent > div {
+	padding-top: 20px;
+}
+
+.tcontent .fbgTitle {
+	margin-bottom: 20px;
+	padding-left: 30px;
+	font-family: logoFont;
+	font-weight: bold;
+}
+
+#productDescription {
+	text-align: center;
+	font-size: 22px;
+}
+
+#contactDescription {
+	font-size: 18px;
+}
+
+
+/*Footer*/
+footer {
+	width: 100%;
+	height: 80px;
+	color: #FFFFFF;
+	background-color: #002000;
+}
+
+footer > div {
+	text-align: center;
+	padding-top: 50px;
+	color: #FFFFFF;
+}
+
+/*Responsive sizes*/
+@media(min-width: 768px) {
+
+	/*Menu*/
+	#collapse-menu > ul {
+		height: 80px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.navbar-nav {
+		float: right;
+	}
+
+	.homeStatement .stateImage {
+		height: 100%;
+	}
+
+	.homeStatement .stateImage {
+		text-align: right;
+	}
+
+	.homeStatement .stateText {
+		text-align: left;
+	}
+}
